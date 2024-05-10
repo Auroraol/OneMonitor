@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OneMonitor</class>
+ <widget class="QWidget" name="OneMonitor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1291</width>
+    <height>751</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OneMonitor</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">outline:none;</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_10">
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #111530;
+	color: rgb(255, 255, 255);
+	font: 18pt &quot;楷体&quot;;
+}
+
+
+</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="1">
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="styleSheet">
+           <string notr="true">
+QLineEdit{
+	font: 75 italic 18pt &quot;Bahnschrift&quot;;
+border-radius:15px;
+color:rgb(255,255,255);
+
+}
+QLineEdit:hover {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 111), stop:1 rgba(255, 255, 255, 77));
+}
+QLineEdit:focus {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 35), stop:1 rgba(0, 0, 0, 41));
+
+}</string>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+          <property name="placeholderText">
+           <string>监控端ip地址</string>
+          </property>
+          <property name="cursorMoveStyle">
+           <enum>Qt::LogicalMoveStyle</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QPushButton" name="Label_QQ_BG">
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	
+background-color: none;
+border-image: url(:/img/ioc.ico);
+border-radius:20px;
+	margin:10px;
+}
+QPushButton:hover{
+	margin:5px;
+	border-bottom:5px;
+	}
+QPushButton:pressed{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 125), stop:1 rgba(255, 255, 255, 110));}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="Btn_Sreah">
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
+	border:none;
+	qproperty-icon: url(:/img/search.png);
+	qproperty-iconSize:30px;
+	font: italic 15pt &quot;Californian FB&quot;;
+	
+	
+	}
+QPushButton:hover{
+	padding-bottom:10px;
+	}
+QPushButton:pressed{
+	padding-left:10px;
+	padding-top:10px;
+	}
+</string>
+          </property>
+          <property name="text">
+           <string>Sreach               </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="4">
+         <widget class="QPushButton" name="Btn_Lim_2">
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+
+	font: 20pt &quot;Agency FB&quot;;
+	color: rgb(255, 255, 255);
+
+	background-color:none;
+border-radius:10px;
+	}
+QPushButton:hover{
+		background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(144, 144, 144, 158), stop:1 rgba(178, 178, 178, 162));
+	}
+QPushButton:pressed{
+	background-color: rgb(0, 0, 0);
+	}</string>
+          </property>
+          <property name="text">
+           <string>-</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="5">
+         <widget class="QPushButton" name="Btn_exit_Big_W">
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+	font: 10pt &quot;Agency FB&quot;;
+	color: rgb(255, 255, 255);
+
+	background-color:none;
+border-radius:10px;
+	}
+QPushButton:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(164, 17, 17, 145), stop:1 rgba(255, 103, 103, 161));
+	}
+QPushButton:pressed{
+	background-color: rgb(121, 0, 0);
+	}</string>
+          </property>
+          <property name="text">
+           <string>X</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="0" alignment="Qt::AlignLeft">
+       <widget class="QPushButton" name="Btn_Meau">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
+	border-radius:10px;
+	qproperty-icon: url(:img/centeralignment.png);
+	qproperty-iconSize:40px;
+	font: italic 15pt &quot;Californian FB&quot;;
+	color: rgb(255, 255, 255)
+	}
+QPushButton:hover{
+
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 121), stop:1 rgba(255, 255, 255, 122));
+
+	}
+QPushButton:pressed{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 121), stop:1 rgba(0, 0, 0, 122));
+
+	}
+</string>
+        </property>
+        <property name="text">
+         <string>Meau       </string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QWidget" name="Btn_Widget" native="true">
+        <property name="styleSheet">
+         <string notr="true">QWidget{
+	background-color: #20284F
+}
+</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QPushButton" name="Btn_M_Home">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color: rgb(0, 255, 255);
+
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
+	border:none;
+	qproperty-icon: url(:/img/home.png);
+	qproperty-iconSize:40px;
+	font: italic 15pt &quot;Californian FB&quot;;
+	
+	}
+QPushButton:hover{
+background-color: qlineargradient(spread:pad, x1:0.134, y1:0.493955, x2:1, y2:0.562, stop:0 rgba(35, 130, 175, 223), stop:1 rgba(255, 255, 255, 0));
+
+	}
+</string>
+             </property>
+             <property name="text">
+              <string>Home                  </string>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignLeft">
+            <widget class="QPushButton" name="Btn_M_Page3">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color: rgb(0, 255, 255);
+
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
+border:none;
+	qproperty-icon: url(:/img/all.png);
+	qproperty-iconSize:40px;
+	font: italic 15pt &quot;Californian FB&quot;;
+	
+	}
+QPushButton:hover{
+background-color: qlineargradient(spread:pad, x1:0.134, y1:0.493955, x2:1, y2:0.562, stop:0 rgba(35, 130, 175, 223), stop:1 rgba(255, 255, 255, 0));
+
+
+	}
+</string>
+             </property>
+             <property name="text">
+              <string>Monitor</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Btn_M_Setting">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color: rgb(0, 255, 255);
+
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
+	border:none;
+	
+	qproperty-icon:url(:/img/setting (1).png);
+	qproperty-iconSize:40px;
+	font: italic 15pt &quot;Californian FB&quot;;
+	
+	}
+QPushButton:hover{
+background-color: qlineargradient(spread:pad, x1:0.134, y1:0.493955, x2:1, y2:0.562, stop:0 rgba(35, 130, 175, 223), stop:1 rgba(255, 255, 255, 0));
+
+
+	}
+
+</string>
+             </property>
+             <property name="text">
+              <string>Setting               </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>316</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Btn_M_Qu">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color: rgb(0, 255, 255);
+
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
+	border:none;
+	qproperty-icon:url(:/img/help.png);
+	qproperty-iconSize:40px;
+	font: italic 15pt &quot;Californian FB&quot;;
+	
+	}
+QPushButton:hover{
+padding-bottom:8px;
+
+
+	}
+
+</string>
+             </property>
+             <property name="text">
+              <string>Question            </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Btn_M_Exit">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	color: rgb(0, 255, 255);
+
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
+	border:none;
+	
+	qproperty-icon:url(:/img/sign-out.png); 
+	qproperty-iconSize:40px;
+	font: italic 15pt &quot;Californian FB&quot;;
+	
+	}
+QPushButton:hover{
+padding-bottom:8px;
+	}
+QPushButton:pressed{
+
+	}</string>
+             </property>
+             <property name="text">
+              <string>Exit                     </string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QStackedWidget" name="stackedWidget">
+        <property name="styleSheet">
+         <string notr="true">/*-----------------------------------------------------------------------------------------*/
+
+/*超链接*/
+QCommandLinkButton {	
+	border-radius: 5px;
+	padding: 5px;
+	color: rgb(0, 255, 255);
+}
+QCommandLinkButton:hover {	
+	background-color: rgb(44, 49, 60);
+}
+QCommandLinkButton:pressed {	
+	background-color:rgba(0, 200, 255, 100);
+}
+/*-----------------------------------------------------------------------------------------*//*CheckBox*/
+QCheckBox{
+	color: rgb(0, 255, 255);
+	font: 75 12pt &quot;Agency FB&quot;;
+}
+QCheckBox::indicator {
+    border: 3px solid #20284F;
+	width: 15px;
+	height: 15px;
+	border-radius: 10px;
+    background: #20284F;
+
+}
+QCheckBox::indicator:hover {
+    border: 3px solid rgb(58, 66, 81);
+}
+QCheckBox::indicator:checked {
+    background: 3px solid rgb(0, 255, 255);
+	border: 3px solid rgb(52, 59, 72);	
+
+}
+/*-----------------------------------------------------------------------------------------*/
+/*PlainTextEdit*/
+
+QPlainTextEdit {
+	color:rgb(0,255,255);
+	font: 20pt &quot;Agency FB&quot;;
+	background-color: rgb(27, 29, 35);
+	border-radius: 5px;
+	padding: 10px;
+	selection-color: rgb(255, 255, 255);
+	selection-background-color: rgb(255, 121, 198);
+}
+QPlainTextEdit  QScrollBar:vertical {
+    width: 8px;
+ }
+QPlainTextEdit  QScrollBar:horizontal {
+    height: 8px;
+ }
+
+QPlainTextEdit:focus {
+	border: 2px solid rgb(91, 101, 124);
+}
+/*-----------------------------------------------------------------------------------------*/
+/*QScrollBar*/
+QScrollBar:horizontal {
+    border: none;
+    background: rgb(52, 59, 72);
+    height: 8px;
+    margin: 0px 21px 0 21px;
+	border-radius: 0px;
+}
+QScrollBar::handle:horizontal {
+    background: rgb(0, 255, 255);
+    min-width: 25px;
+	border-radius: 4px
+}
+
+QScrollBar::up-arrow:horizontal, QScrollBar::down-arrow:horizontal
+{
+     background: none;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal
+{
+     background: none;
+}
+ QScrollBar::add-line:vertical {
+     border: none;
+    background: rgb(55, 63, 77);
+     height: 20px;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+     subcontrol-position: bottom;
+     subcontrol-origin: margin;
+ }
+ QScrollBar::sub-line:vertical {
+	border: none;
+    background: rgb(55, 63, 77);
+     height: 20px;
+	border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+     subcontrol-position: top;
+     subcontrol-origin: margin;
+ }
+ QScrollBar:vertical {
+	border: none;
+    background: rgb(52, 59, 72);
+    width: 8px;
+    margin: 21px 0 21px 0;
+	border-radius: 0px;
+ }
+ QScrollBar::handle:vertical {	
+	background: rgb(0, 255, 255);
+    min-height: 25px;
+	border-radius: 4px
+ }
+
+ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+     background: none;
+ }
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+     background: none;
+ }
+/*-----------------------------------------------------------------------------------------*/
+/*Sliders */
+QSlider::groove:horizontal {
+    border-radius: 5px;
+    height: 20px;
+	margin: 0px;
+	background-color: rgb(52, 59, 72);
+}
+QSlider::groove:horizontal:hover {
+	background-color: rgb(55, 62, 76);
+}
+QSlider::handle:horizontal {
+    background-color: rgb(0, 200, 255);
+    border: none;
+    height: 10px;
+    width: 10px;
+    margin: 0px;
+	border-radius: 5px;
+}
+QSlider::handle:horizontal:hover {
+    background-color: rgb(0, 255, 255);
+}
+QSlider::handle:horizontal:pressed {
+    background-color: rgb(0, 200, 255);
+}
+
+QSlider::groove:vertical {
+    border-radius: 5px;
+    width: 15px;
+    margin: 0px;
+	background-color: rgb(52, 59, 72);
+}
+QSlider::groove:vertical:hover {
+	background-color: rgb(55, 62, 76);
+}
+QSlider::handle:vertical {
+    background-color: rgb(0, 200, 255);
+	border: none;
+    height: 30px;
+    width: 10px;
+    margin: 0px;
+	border-radius: 5px;
+}
+QSlider::handle:vertical:hover {
+    background-color: rgb(0, 255, 255);
+}
+QSlider::handle:vertical:pressed {
+    background-color: rgb(0, 200, 255);
+}
+/*-----------------------------------------------------------------------------------------*/
+/*comboBox*/
+QComboBox{
+	background-color: #20284F;
+    font: 10pt &quot;Agency FB&quot;;
+	color: rgb(0,255,255);
+	border-radius: 8px;
+	border: 2px solid rgb(33, 37, 43);
+	padding: 5px;
+	padding-left: 10px;
+}
+QComboBox:hover{
+	border: 2px solid rgb(64, 71, 88);
+}
+QComboBox::drop-down {
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 25px; 
+	border-left-width: 3px;
+	border-left-color: rgba(39, 44, 54, 150);
+	border-left-style: solid;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;	
+	background-position: center;
+	background-repeat: no-reperat;
+ }
+QComboBox QAbstractItemView {
+	color: rgb(0, 200, 255);	
+	background-color: rgb(33, 37, 43);
+	padding: 10px;
+	selection-background-color: rgb(39, 44, 54);
+}
+/* 下拉箭头样式 */
+ QComboBox::down-arrow {
+　　width: 15px; /* 下拉箭头的宽度（建议与下拉框drop-down的宽度一致） */ 
+　　/*background: transparent; /* 下拉箭头的的背景色 */ 
+　　padding: 0px 0px 0px 0px; /* 上内边距、右内边距、下内边距、左内边距 */
+	 border-radius:5px;
+	background-color: rgb(0,255,255);
+		
+ } 
+
+/* 点击下拉箭头 */
+ QComboBox::down-arrow:on { 
+　background-color: rgb(0, 255, 255);
+ }
+/*-----------------------------------------------------------------------------------------*/
+/*QTabWidget*/
+QTableWidget {	
+	/*奇数行alternate-background-color:rgba(35,95,155,64);*/
+	background-color: #20284F;
+	padding: 10px;
+	border-radius: 20px;
+	gridline-color: rgb(0, 255, 255);
+	border-bottom: 1px solid rgb(44, 49, 60);
+	color:rgb(0,150,200);
+}
+QTableWidget::item{
+	
+	border-color: rgb(44, 49, 60);
+	padding-left: 5px;
+	padding-right: 5px;
+	gridline-color: rgb(44, 49, 60);
+	font: italic 15pt &quot;Californian FB&quot;;
+	color:rgb(0,200,255);
+}
+QTableWidget::item:selected{
+	background-color: #20284F;
+	color:rgb(0,255,255);
+	border-bottom:4px solid rgb(0,255,255);
+	font: italic 30pt &quot;Californian FB&quot;;
+}
+QHeaderView::section{
+	background-color: rgb(44, 49, 58);
+	max-width: 30px;
+	border: 1px solid rgb(44, 49, 58);
+	border-style: none;
+    border-bottom: 1px solid rgb(44, 49, 60);
+    border-right: 1px solid rgb(44, 49, 60);
+}
+
+
+QTableWidget::horizontalHeader {	
+	background-color: #111530;
+}
+QHeaderView::section::vertical::first, QHeaderView::section::vertical::only-one
+{
+    border-top: 1px solid #6c6c6c;
+}
+QHeaderView::section:horizontal
+{
+    border: 1px solid rgb(33, 37, 43);
+	background-color: #111530;
+	color:rgb(0,255,255);
+	padding: 3px;
+	font: 75 12pt &quot;Agency FB&quot;;
+}
+QHeaderView::section:vertical
+{
+	background-color: #20284F;
+	color:rgb(0,255,255);
+	padding: 3px;
+	font: 75 10pt &quot;Agency FB&quot;;
+    border-left: 3px solid rgb(0,100,150);
+	border-right: 3px solid rgb(0,100,150);
+}
+QHeaderView::section:checked
+{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 255, 255, 70), stop:1 rgba(255, 255, 255, 90));
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*ListWidget*/
+QListWidget{
+	
+	background-color:#20284F;
+font: 15pt &quot;Agency FB&quot;;
+color: rgb(0, 150, 255);
+	border-radius:20px;
+
+}
+/*选中item*/
+QListView::item {
+    height: 60px;
+	color:rgb(0,255,255);
+	border-radius:7px;
+}
+QListView::item:hover {
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 91), stop:1 rgba(255, 255, 255, 139));
+	padding-left:50px;
+	
+}
+QListView::item:selected {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(94, 94, 94, 94), stop:1 rgba(114, 114, 114, 105));
+	padding: 10px;
+	border-left: 10px solid rgba(0, 255, 255,255);
+	border-right: 10px solid rgba(0, 255, 255,255);
+}
+/*-----------------------------------------------------------------------------------------*/
+/*QLineEdit*/
+QLineEdit{
+background-color:#20284F;
+border:2px solid rgba(0, 150, 220, 220);
+color:rgba(0, 255, 255, 240);
+font: 15pt &quot;Agency FB&quot;;
+border-radius:10px;
+}
+QLineEdit:hover {
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 111), stop:1 rgba(255, 255, 255, 77));
+border:3px solid rgba(10, 255, 255, 200);
+padding-bottom:7px;
+}
+QLineEdit:focus {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 35), stop:1 rgba(0, 0, 0, 41));
+border:3px solid rgba(10, 255, 255, 200);
+color:rgba(0, 255, 255, 240);
+padding-bottom:7px;
+}
+/*-----------------------------------------------------------------------------------------*/
+/*TabWidget*/
+QTabWidget::pane { 
+	
+    position: absolute;
+    top: -0.5em;
+	border-radius:20px;
+}
+
+QTabWidget::tab-bar {
+    /*alignment: center;*/
+}
+QTabBar::tab {
+	font: 12pt &quot;华光行草_CNKI&quot;;
+    background-color: #20284F;
+	color: rgb(0, 193, 193);
+    border: 3px solid rgba(0, 193, 193,200);
+    min-width: 100px;
+	padding:10px;
+	border-radius:10px;
+	
+}
+
+QTabBar::tab:hover {
+    border: 3px solid rgb(0, 255, 255);
+}
+
+QTabBar::tab:selected {
+	border-radius:8px;
+    border-top: 5px solid rgb(0, 255, 255);
+	color: rgb(0,255,255);
+    border-bottom:10px;
+	border-left:0px;
+	border-right:0px;
+}
+/*-----------------------------------------------------------------------------------------*/
+/*QPushButton*/
+QPushButton{
+	background-color: #283263;
+	border-radius:10px;
+	color:rgb(0,210,210);
+	font: 18pt &quot;Agency FB&quot;;
+	}
+QPushButton:hover{
+	background-color:#323e7c;
+	}
+QPushButton:pressed{
+	background-color:#1a203f;
+	color:rgb(0,255,255);
+	padding-left:5px;
+	padding-top:5px;
+	}
+/*-----------------------------------------------------------------------------------------*/
+/*ToolBox*/
+	
+QToolBox::tab {
+    font: 14pt &quot;楷体&quot;;
+	background-color: #20284F;
+    border-radius: 5px;
+    color: rgb(0,200,200);
+}
+QToolBox::tab:hover {
+    color: rgb(0,255,255);
+}
+QToolBox::tab:pressed{
+	color: rgb(0,150,150);}
+QToolBox::tab:selected { /* italicize selected tabs */
+    color: rgb(0,255,255);
+}
+QToolBox::tab:selected:hover{ /* italicize selected tabs */
+    color: rgb(0,150,150);
+}
+QToolBox::tab:selected:pressed{ /* italicize selected tabs */
+    color: rgb(0,100,100);
+}
+/*-----------------------------------------------------------------------------------------*/
+/*QProgressBar*/
+QProgressBar {
+	font: 18pt &quot;楷体&quot;;
+
+	background-color: #20284F;
+	color: rgb(255, 255, 255);
+	border-style: none;
+	border: 4px solid rgb(0,198,198);
+	border-radius: 10px;
+	text-align: center;
+	
+}
+QProgressBar::chunk{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0.761, y2:1, stop:0 rgba(0, 170, 200, 220), stop:1 rgba(0, 255, 255, 255));
+	
+}
+/*-----------------------------------------------------------------------------------------*/</string>
+        </property>
+        <property name="currentIndex">
+         <number>4</number>
+        </property>
+        <widget class="QWidget" name="page1">
+         <layout class="QGridLayout" name="gridLayout_9">
+          <item row="0" column="0" rowspan="2">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page2">
+         <layout class="QGridLayout" name="gridLayout_11">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_3"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="page3">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="1" rowspan="4">
+           <widget class="QLabel" name="label_tx_ms_7">
+            <property name="minimumSize">
+             <size>
+              <width>900</width>
+              <height>626</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>26</pointsize>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: #20284F;
+color: rgb(0, 193, 193);
+font: 26pt &quot;Agency FB&quot;;
+border-radius:20px;
+
+</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::Box</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">	font: italic 15pt &quot;Californian FB&quot;;</string>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" alignment="Qt::AlignBottom">
+           <widget class="QLabel" name="label_2">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>IP:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="0">
+             <widget class="QPushButton" name="pushButton_3">
+              <property name="maximumSize">
+               <size>
+                <width>125</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>截图  </string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QPushButton" name="pushButton_4">
+              <property name="maximumSize">
+               <size>
+                <width>125</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="text">
+               <string>重启</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="maximumSize">
+               <size>
+                <width>125</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>鼠标锁定</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QPushButton" name="pushButton_6">
+              <property name="maximumSize">
+               <size>
+                <width>125</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>鼠标解锁</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QPushButton" name="pushButton_5">
+              <property name="maximumSize">
+               <size>
+                <width>125</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>关机</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="0">
+             <widget class="QPushButton" name="pushButton_7">
+              <property name="maximumSize">
+               <size>
+                <width>125</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>注销</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="pagehome">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="tableWidget">
+            <column>
+             <property name="text">
+              <string/>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="pagesetting">
+         <layout class="QGridLayout" name="gridLayout_7">
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_cityName">
+            <property name="placeholderText">
+             <string>输入城市</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0" rowspan="2">
+           <widget class="QTabWidget" name="tabWidget">
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QTabWidget::pane { /* The tab widget frame */
+	
+    position: absolute;
+    top: -0.5em;
+	border-radius:20px;
+}
+
+QTabWidget::tab-bar {
+    /*alignment: center;*/
+}
+QTabBar::tab {
+	font: 12pt &quot;华光行草_CNKI&quot;;
+    background-color: #20284F;
+	color: rgb(0, 193, 193);
+    border: 3px solid rgba(0, 193, 193,200);
+    min-width: 100px;
+	padding:10px;
+	border-radius:10px;
+	
+}
+
+QTabBar::tab:hover {
+    border: 3px solid rgb(0, 255, 255);
+}
+
+QTabBar::tab:selected {
+	border-radius:8px;
+    border-top: 5px solid rgb(0, 255, 255);
+	color: rgb(0,255,255);
+    border-bottom:10px;
+	border-left:0px;
+	border-right:0px;
+}</string>
+            </property>
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <property name="elideMode">
+             <enum>Qt::ElideMiddle</enum>
+            </property>
+            <widget class="QWidget" name="tab">
+             <attribute name="title">
+              <string>时钟</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="Clock" name="label_Tool_lan_2">
+                <property name="styleSheet">
+                 <string notr="true">background-color: #20284F;
+color: rgb(0, 193, 193);
+font: 26pt &quot;Agency FB&quot;;
+border-radius:20px;
+
+</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="scaledContents">
+                 <bool>true</bool>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_2">
+             <attribute name="title">
+              <string>天气</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_12">
+              <item row="0" column="0">
+               <widget class="Weather" name="widget_2" native="true"/>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QProgressBar" name="progressBar">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="value">
+             <number>50</number>
+            </property>
+            <property name="textDirection">
+             <enum>QProgressBar::TopToBottom</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="pushButton">
+            <property name="text">
+             <string>城市切换</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QRadioButton" name="radioButton">
+            <property name="styleSheet">
+             <string notr="true">QRadioButton{
+	background-color:none;
+	color:rgb(0,200,200);
+	margin:10px;
+	}
+QRadioButton:hover{
+	color:rgb(0,255,255);
+}
+/*
+QRadioButton:pressed{
+	padding-left:5px;
+	padding-top:5px;}*/
+QRadioButton::indicator{
+	border:3px solid rgb(0,170,200);
+	border-radius:3px;
+}
+QRadioButton::indicator:hover{
+	border:3px solid rgb(0,255,255);
+	border-radius:3px;
+}
+QRadioButton::indicator:pressed{
+	border:3px solid rgb(0,150,150);
+}
+QRadioButton::indicator:checked{
+	border:3px solid rgb(0,150,150);
+	background-color:rgb(0,255,255);
+}
+</string>
+            </property>
+            <property name="text">
+             <string>自动启动</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_fwqc">
+            <property name="text">
+             <string>开启服务器</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_fwqo">
+            <property name="text">
+             <string>关闭服务器</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QToolBox" name="toolBox">
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>511</width>
+               <height>389</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>备忘录</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_13">
+              <item row="1" column="0">
+               <widget class="showJsonTextEdit" name="textEdit">
+                <property name="toolTip">
+                 <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: #2b366a;
+color: rgb(0, 193, 193);
+font: 14pt &quot;Agency FB&quot;;
+border-radius:20px;</string>
+                </property>
+                <property name="placeholderText">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_fwq">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>showJsonTextEdit</class>
+   <extends>QTextEdit</extends>
+   <header>memo/showjsontextedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Clock</class>
+   <extends>QLabel</extends>
+   <header>clock.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Weather</class>
+   <extends>QWidget</extends>
+   <header>weather.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,54 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/all.png</file>
+        <file>img/arrow-right.png</file>
+        <file>img/arrow-right-circle.png</file>
+        <file>img/centeralignment.png</file>
+        <file>img/close (1).png</file>
+        <file>img/help.png</file>
+        <file>img/home.png</file>
+        <file>img/message center-fill.png</file>
+        <file>img/minus.png</file>
+        <file>img/search.png</file>
+        <file>img/setting (1).png</file>
+        <file>img/sign-out.png</file>
+        <file>img/ioc.ico</file>
+        <file>img_weather/type/BaoXue.png</file>
+        <file>img_weather/type/BaoYu.png</file>
+        <file>img_weather/type/BaoYuDaoDaBaoYu.png</file>
+        <file>img_weather/type/DaBaoYu.png</file>
+        <file>img_weather/type/DaBaoYuDaoTeDaBaoYu.png</file>
+        <file>img_weather/type/DaDaoBaoXue.png</file>
+        <file>img_weather/type/DaDaoBaoYu.png</file>
+        <file>img_weather/type/DaXue.png</file>
+        <file>img_weather/type/DaYu.png</file>
+        <file>img_weather/type/DongYu.png</file>
+        <file>img_weather/type/DuoYun.png</file>
+        <file>img_weather/type/FuChen.png</file>
+        <file>img_weather/type/LeiZhenYu.png</file>
+        <file>img_weather/type/LeiZhenYuBanYouBingBao.png</file>
+        <file>img_weather/type/Mai.png</file>
+        <file>img_weather/type/QiangShaChenBao.png</file>
+        <file>img_weather/type/Qing.png</file>
+        <file>img_weather/type/ShaChenBao.png</file>
+        <file>img_weather/type/TeDaBaoYu.png</file>
+        <file>img_weather/type/undefined.png</file>
+        <file>img_weather/type/Wu.png</file>
+        <file>img_weather/type/XiaoDaoZhongXue.png</file>
+        <file>img_weather/type/XiaoDaoZhongYu.png</file>
+        <file>img_weather/type/XiaoXue.png</file>
+        <file>img_weather/type/XiaoYu.png</file>
+        <file>img_weather/type/Xue.png</file>
+        <file>img_weather/type/YangSha.png</file>
+        <file>img_weather/type/Yin.png</file>
+        <file>img_weather/type/Yu.png</file>
+        <file>img_weather/type/YuJiaXue.png</file>
+        <file>img_weather/type/ZhenXue.png</file>
+        <file>img_weather/type/ZhenYu.png</file>
+        <file>img_weather/type/ZhongDaoDaXue.png</file>
+        <file>img_weather/type/ZhongDaoDaYu.png</file>
+        <file>img_weather/type/ZhongXue.png</file>
+        <file>img_weather/type/ZhongYu.png</file>
+        <file>img_weather/background.png</file>
+    </qresource>
+</RCC>
